@@ -1,0 +1,314 @@
+@import "nib"
+@import "nib/vendor"
+@import "normalize.styl"
+@import "animate.styl"
+vendor-prefixes = o ms moz webkit official
+/*font-family: 'Amaranth', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+@keyframes scales
+    from
+        color #05ffb2
+    to
+        color #00e6f8
+negro = #4c4a4a;
+azul = #21b1e6;
+verde = #06f5ab
+lila = #E91E63
+azulOsc = #005d8a
+verdeOsc = #00585f
+
+.txtBlack
+    color negro !important
+b
+    color: #21b1e6;
+h1
+h2
+h3
+    margin: 0
+body
+html
+    height 100%
+    width 100%
+.main-Container
+    max-width: 768px
+    margin: 0 auto
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    overflow: hidden
+.parallax-window
+    min-height: 300px;
+    background: transparent;
+
+.desk
+    display none
+.flexCenter
+    display flex
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center
+.transition
+    animation-duration: 3s;
+    animation-name: scales;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+.just
+    text-align justify !important
+    margin: 1em 0 !important
+.bluex
+    width: 100%;
+    position: absolute;
+    background: #005d8a;
+    height: 50%;
+    bottom: 0;
+.green
+    width: 100%;
+    position: absolute;
+    background: #00585f;
+    height: 50%;
+    top: 0;
+.titu-Pri
+    font-family: 'Amaranth', sans-serif;
+    margin: 0;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;  
+    padding: 0 0.6em;
+
+.titu-Secu
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: lighter;
+    padding 0 1.2em
+.landing
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    &-Back
+        background-color: rgba(0, 0, 0, 0.76);
+        height: 100%;
+        position: absolute;
+        top 0
+        img
+            height: 100%;
+            z-index: -1;
+            background-position: 0 -191px;
+            position: relative;
+    &-Content
+        z-index: 1
+        position relative
+        -vendor-animation-duration: 10s;
+        -vendor-animation-delay: 10s;
+    &-Hands
+        &-Robot
+            display: inline-block;
+            position: absolute;
+            bottom: -162px;
+            img
+                width 220px
+                
+        &-Human
+            display: inline-block;
+            position: absolute;
+            top: -145px;
+            right: 0;
+            img
+                width 145px
+    .downNow
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3em;
+        color: white;
+        text-shadow: 1px 2px 8px #000;
+/* question section */
+.question
+    height: 300px
+.how
+    height: 360px
+    .btn
+        border: none;
+        padding: 0.8em;
+        width: 180px;
+        box-sizing: border-box;
+        background: #06f5ab;
+        color: white;
+        font-size: 1.2em;
+.imgSection
+    width: 100%;
+    img
+        width: 100%;
+        display: block;
+.steps
+    &-Container
+        max-width: 380px
+        
+        &-Ul
+            list-style: none
+            padding: 0
+            margin: 0
+            &-Items
+                margin 0
+                padding: 1em
+                cursor pointer
+                transition all 0.3s ease-in-out
+                p
+                    margin: 0
+                    i
+                        font-size: 1.6em;
+                        margin-right: 0.5em;
+                        display: inline-block;
+                        float: left;
+                        position: relative;
+                        top: -0.1em;
+            .tab1
+                background: azul;
+                color: white;
+            .tab2
+                background: verde ;
+                color: white;
+            .tab3
+                background: lila ;
+                color: white;
+            .tab4
+                background: azulOsc;
+                color: white;
+            .tab5
+                background: verdeOsc;
+                color: white;
+.desplega
+    min-height: 150px;
+    box-sizing: border-box;
+    padding: 0.5em;
+    display: none
+.cont1
+    border 1px solid azul;
+.cont2
+    border 1px solid verde;
+.cont3
+    border 1px solid lila;
+.cont4
+    border 1px solid azulOsc;
+.cont5
+    border 1px solid verdeOsc;
+.active
+    display: block
+.buynow
+    padding-top 2em
+    .quote
+        padding: 1em
+        text-align: center
+        max-width: 390px;
+        .number
+            color: #21b1e6;
+            font-size: 3.5em;
+            margin: 0
+    .btn
+        border: none;
+        padding: 0.8em;
+        width: 180px;
+        box-sizing: border-box;
+        background: lila;
+        color: white;
+        font-size: 1.2em;
+.beware
+    text-align: center;
+    color: white;
+    margin-bottom 1em
+.go-Now
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    background: azul;
+    color: white;
+footer
+    padding: 0.5em;
+    background: #005d8a;
+    text-align: center;
+    color: white;
+.fa-heart
+    color red
+@media (min-width: 768px)
+    .landing
+        &-Hands
+            &-Robot
+                display: inline-block;
+                position: absolute;
+                bottom: -288px;
+                img
+                    width: 380px;               
+            &-Human
+                display: inline-block;
+                position: absolute;
+                top: -306px;
+                right: 0;
+                img
+                    width 300px
+        .downNow           
+            font-size: 4em;            
+    .titu-Pri
+        font-family: 'Amaranth', sans-serif;
+        margin: 0;
+        color: #fff;
+        font-size: 2.5em;
+        text-align: center;  
+        padding: 0 0.6em;
+
+    .titu-Secu
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: lighter;
+        padding 0 1.2em
+@media (min-width: 1300px)
+    .landing
+        &-Hands
+            &-Robot
+                display: inline-block;
+                position: absolute;
+                bottom: -425px;
+                img
+                    width: 600px;               
+            &-Human
+                display: inline-block;
+                position: absolute;
+                top: -400px;
+                right: 0;
+                img
+                    width: 430px;
+        .downNow           
+            font-size: 6em; 
+    .titu-Pri
+        font-family: 'Amaranth', sans-serif;
+        margin: 0;
+        color: #fff;
+        font-size: 2.5em;
+        text-align: center;  
+        padding: 0 0.6em;
+
+    .titu-Secu
+        margin: 0;
+        color: #fff;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: lighter;
+        padding 0 1.2em
+
+
+    
+
+
+
+
+        
+
